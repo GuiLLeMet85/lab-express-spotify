@@ -1,0 +1,128 @@
+html,
+body,
+div,
+span,
+applet,
+object,
+iframe,
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+p,
+blockquote,
+pre,
+a,
+abbr,
+acronym,
+address,
+big,
+cite,
+code,
+del,
+dfn,
+em,
+font,
+img,
+ins,
+kbd,
+q,
+s,
+samp,
+small,
+strike,
+sub,
+sup,
+tt,
+var,
+dl,
+dt,
+dd,
+ol,
+ul,
+li,
+fieldset,
+form,
+label,
+legend,
+table,
+caption,
+tbody,
+tfoot,
+thead,
+tr,
+th,
+td,
+header,
+section,
+footer,
+article,
+details {
+    margin: 0;
+    padding: 0;
+    border: 0;
+    outline: 0;
+    font-weight: inherit;
+    font-style: inherit;
+    font-size: 100%;
+    font-family: inherit;
+    vertical-align: baseline;
+}
+
+
+/* Basic styles, change according to your style */
+
+
+body {
+    padding: 50px;
+    font: 14px "Lucida Grande", Helvetica, Arial, sans-serif;
+}
+
+a {
+    color: #00B7FF;
+    text-decoration: none;
+}
+
+p {
+    font-size: 16px;
+}
+
+h1 {
+    font-size: 6.5rem;
+    color: white;
+    margin-bottom: 5vw;
+    font-weight: 600;
+}
+
+h2 {
+    font-size: 2rem;
+    margin-bottom: 2vw;
+    font-weight: 600;
+}
+
+h3 {
+    font-size: 1.3rem;
+}
+
+h4 {
+    font-size: 1.2rem;
+}
+
+h5 {
+    font-size: 1.1rem;
+}
+
+/* -------------Index.hbs-------------*/
+
+main{
+    background-image: url("/images/spotify-background.jpeg");
+    background-size: cover;
+    background-repeat: no-repeat;
+}
+
+#search-section {
+    background-color: azure;
+    
+}

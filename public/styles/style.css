@@ -116,7 +116,7 @@ h5 {
 
 /* -------------Index.hbs-------------*/
 
-main{
+body{
     background-image: url("/images/spotify-background.jpeg");
     background-size: cover;
     background-repeat: no-repeat;
@@ -131,7 +131,7 @@ main{
 
 /* -------------artist-search.hbs-------------*/
 
-#grid-artists {
+#grid-3-column {
     display: grid;
     grid-template-columns: 1fr 1fr 1fr;
 }
@@ -148,3 +148,6 @@ main{
     padding: 3vh 1vw;
 }
 
+img.artist-img {
+    width: 300px;
+}

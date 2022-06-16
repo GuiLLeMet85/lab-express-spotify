@@ -86,7 +86,7 @@ a {
 }
 
 p {
-    font-size: 16px;
+    font-size: 14px;
 }
 
 h1 {
@@ -131,12 +131,20 @@ main{
 
 /* -------------artist-search.hbs-------------*/
 
+#grid-artists {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+}
 
 #artist-results {
-    display:flex;
+    display: flex;
     flex-direction: column;
+    align-content: center;
+    align-items: center;
+    margin: 4vh 2vw;
 }
 
-.artist-img {
-    width: 15%;
+#artist-results h3 {
+    padding: 3vh 1vw;
 }
+

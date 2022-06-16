@@ -1,8 +1,10 @@
 
-<div id = "artist-results">
-{{#each artist}}
-  <img  src="{{images.1.url}}" alt="{{name}} class="artist-img">
-    <h3>{{name}}</h3>
-  <a href="/albums/{{id}}">View Albums</a> 
-{{/each}}
+<div id ="grid-artists">
+    {{#each artist}}
+        <div id = "artist-results">
+        <img  src="{{images.1.url}}" alt="{{name}}" class="artist-img">
+            <h3>{{name}}</h3>
+        <a href="/albums/{{id}}">View Albums</a> 
+        </div>
+    {{/each}}
 </div>

@@ -126,3 +126,17 @@ main{
     background-color: azure;
     
 }
+
+
+
+/* -------------artist-search.hbs-------------*/
+
+
+#artist-results {
+    display:flex;
+    flex-direction: column;
+}
+
+.artist-img {
+    width: 15%;
+}

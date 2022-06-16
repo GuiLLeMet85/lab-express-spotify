@@ -32,11 +32,11 @@ app.get("/", (req, res) => {
 
 app.get("/artist-search", (req, res) => {
   spotifyApi
-    // get = req.query, use name from form
-    .searchArtists(req.query.artistName)
+    .searchArtists(req.query.artistName, { limit: 5 })
     .then((data) => {
       console.log("The received data from the API: ", data.body.artists);
-      res.render("artist-search-results.hbs", {artistSearched});
+      const artist = data.body.artists.items
+      res.render("artist-search-results", {artist});
     })
     .catch((err) =>
       console.log("The error while searching artists occurred: ", err)

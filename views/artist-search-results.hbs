@@ -1,5 +1,8 @@
-{{#each artistSearched}}
-  <img  src="{{this.images}}" alt="{{this.name}}">
-    <h3>{{this.name}}</h3>
-  <a href="/albums/someArtistIdGoesHere">View Albums</a> 
+
+<div id = "artist-results">
+{{#each artist}}
+  <img  src="{{images.1.url}}" alt="{{name}} class="artist-img">
+    <h3>{{name}}</h3>
+  <a href="/albums/{{id}}">View Albums</a> 
 {{/each}}
+</div>

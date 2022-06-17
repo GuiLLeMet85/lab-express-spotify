@@ -74,14 +74,16 @@ details {
 
 /* Basic styles, change according to your style */
 
+@import url("https://fonts.googleapis.com/css2?family=Orelega+One&family=Roboto+Flex:opsz@8..144&display=swap");
 
 body {
-    padding: 50px;
-    font: 14px "Lucida Grande", Helvetica, Arial, sans-serif;
+    font-family: "Roboto Flex", sans-serif;
+    margin: 0;
+    padding: 0;
+    border: 0;
 }
 
 a {
-    color: #00B7FF;
     text-decoration: none;
 }
 
@@ -98,8 +100,9 @@ h1 {
 
 h2 {
     font-size: 2rem;
-    margin-bottom: 2vw;
+    margin-top: 2vw;
     font-weight: 600;
+    text-align: center;
 }
 
 h3 {
@@ -114,20 +117,57 @@ h5 {
     font-size: 1.1rem;
 }
 
+.backBtn {
+    display: flex;
+    padding: 1vh 2vw;
+    background-color: indianred;
+    color: white;
+    border: none;
+    font-size: 1.2rem;
+    margin: 3vh auto;
+}
+
+
 /* -------------Index.hbs-------------*/
 
-body{
+main{
     background-image: url("/images/spotify-background.jpeg");
     background-size: cover;
-    background-repeat: no-repeat;
+    width: 100vw;
+    height: 100vh;
 }
 
 #search-section {
-    background-color: azure;
-    
+    height: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
 }
 
+form {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 7.5vh 15vw;
+    margin: 0 auto;
+    background-color: rgba(255, 255, 255, 0.5);
+}
 
+input.in-search {
+    width: 500px;
+    margin: 2vh auto;
+    padding: 1vh 1vw;
+    font-size: 1.1rem;
+}
+
+button.but-search, #artist-results a {
+    padding: 1vh 2vw;
+    background-color: indianred;
+    color: white;
+    border: none;
+    font-size: 1.2rem;
+    margin: 1vh auto 5vh;
+}
 
 /* -------------artist-search.hbs-------------*/
 
@@ -142,12 +182,41 @@ body{
     align-content: center;
     align-items: center;
     margin: 4vh 2vw;
+    width: 500px;
+    background-color: #333;
+    justify-content: flex-end;
 }
+
 
 #artist-results h3 {
     padding: 3vh 1vw;
+    color: white;
 }
 
+
 img.artist-img {
-    width: 300px;
+    max-width: 500px;
+    width: 500px;
+} 
+
+/* -------------tracks.hbs-------------*/
+
+header {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    background-color: #333;
+    align-items: center;
+    color: grey;
+    padding: 2vh 10vw 5vh 3vw;
+}
+
+.track {
+    display: flex;
+    flex-direction: row;
+    background-color: #999;
+    padding: 1vh 2vw;
+    margin: 2vh 0;
+    justify-content: space-between;
+    align-items: center;
 }

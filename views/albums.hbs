@@ -1,12 +1,11 @@
 
-
-    <h2>Albums for: {{items.0.artists}}</h2>
+  <button class="backBtn" onclick="window.location = document.referrer">GO BACK</button>
 <div id ="grid-3-column">
     {{#each albums}}
         <div id = "artist-results">
         <img  src="{{images.1.url}}" alt="{{name}}" class="artist-img">
             <h3>{{name}}</h3>
-        <a href="/albums/{{total_tracks}}">View Tracks</a> 
+        <a href="/tracks/{{id}}">View Tracks</a> 
         </div>
     {{/each}}
 </div>
